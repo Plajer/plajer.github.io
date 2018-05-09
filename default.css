@@ -307,7 +307,7 @@
 	#header-wrapper
 	{
 		overflow: hidden;
-		padding: 5em 0em;
+		padding: 3em 0em;
 		background: #B03500 url(images/overlay.png) repeat;
 	}
 
@@ -362,7 +362,7 @@
 
 	#menu
 	{
-		width: 80%;
+		width: 90%;
 		margin: 0px auto;
 	}
 	
@@ -416,10 +416,9 @@
 	#wrapper3
 	{
 		overflow: hidden;
-		padding: 8em 0em;
+		padding: 8em 1em;
 		background: #FFF;
 	}
-
 	
 	#wrapper4
 	{
