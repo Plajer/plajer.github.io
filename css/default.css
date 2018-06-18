@@ -19,6 +19,7 @@
 	{
 		margin: 0;
 		padding: 0;
+		font-family: 'Blogger Sans', sans-serif;
 	}
 	
 	p, ol, ul
@@ -297,7 +298,8 @@
 		text-transform: uppercase;
 		font-weight: 400;
 		font-size: 1.1em;
-		color: #6F6F6F;
+		color: #B2B2B2;
+		font-family: 'Blogger Sans', sans-serif;
 	}
 
 /*********************************************************************************/
@@ -307,8 +309,8 @@
 	#header-wrapper
 	{
 		overflow: hidden;
-		padding: 3em 0em;
-		background: #B03500 url(images/overlay.png) repeat;
+		padding: 2em 0em;
+		background: #2B2B2B url(../img/overlay.jpg) repeat;
 	}
 
 	#header
@@ -321,7 +323,7 @@
 
 	#logo
 	{
-		padding: 5em 0em;
+		padding: 3.5em 0em;
 		text-align: center;
 	}
 	
@@ -338,10 +340,9 @@
 	
 	#logo span
 	{
-		letter-spacing: 0.10em;
-		text-transform: uppercase;
+		letter-spacing: 0.08em;
 		font-size: 0.90em;
-		color: rgba(255,255,255,0.5);
+		color: rgba(255,255,255,1);
 	}
 
 	#logo span a
@@ -362,8 +363,8 @@
 
 	#menu
 	{
-		width: 90%;
-		margin: 0px auto;
+		width: 100%;
+		margin: -20px auto;
 	}
 	
 	#menu ul
@@ -380,18 +381,19 @@
 	{
 		display: inline-block;
 		margin-left: 0.50em;
-		padding: 1.5em 1.5em;
-		letter-spacing: 0.20em;
+		padding: 1.5em 2em;
+		letter-spacing: 0.1em;
 		text-decoration: none;
-		font-size: 0.90em;
-		font-weight: 600;
+		font-size: 1em;
 		text-transform: uppercase;
+		font-weight: 900;
 		outline: 0;
 		color: #FFF;
 	}
 	
 	#menu li:hover a, #menu li.active a, #menu li.active span
 	{
+		color: #CCCCCC;
 	}
 	
 	#menu .current_page_item a
@@ -405,7 +407,8 @@
 
 	#wrapper1
 	{
-		background: #242424;
+		background: #475f30;
+		border-top: 2px solid rgba(107,126,89,0.9);
 	}
 
 	#wrapper2
@@ -416,15 +419,17 @@
 	#wrapper3
 	{
 		overflow: hidden;
-		padding: 8em 1em;
-		background: #FFF;
+		padding: 2em 1em;
+		background: #5f3047;
+		border-top: 2px solid rgba(126,89,107,0.9);
 	}
 	
 	#wrapper4
 	{
 		overflow: hidden;
 		padding: 8em 0em;
-		background: #939E77;
+		background: #30475f;
+		border-top: 2px solid rgba(89,107,126,0.9);
 	}
 
 /*********************************************************************************/
@@ -434,22 +439,23 @@
 	#welcome
 	{
 		overflow: hidden;
-		padding: 8em 0em;
+		padding: 5em 0em;
 		text-align: center;
-		color: rgba(255,255,255,0.3);
+		color: rgba(255,255,255,0.8);
 	}
 	
 	#welcome .content
 	{
-		padding: 0em 8em;
+		padding: 0em 7em;
 	}
 	
 	
 	
 	#welcome a,
+	#welcome b,
 	#welcome strong
 	{
-		color: rgba(255,255,255,0.6);
+		color: rgba(255,255,255,1);
 	}
 
 /*********************************************************************************/
@@ -474,16 +480,16 @@
 	#copyright
 	{
 		overflow: hidden;
-		padding: 5em 0em;
-		border-top: 1px solid rgba(255,255,255,0.08);
+		padding: 1em 4em;
+		border-top: 2px groove rgba(255,255,255,1);
 	}
 	
 	#copyright p
 	{
 		letter-spacing: 0.20em;
-		text-align: center;
+		text-align: right;
 		text-transform: uppercase;
-		font-size: 0.80em;
+		font-size: 0.75em;
 		color: rgba(255,255,255,0.3);
 	}
 	
@@ -510,10 +516,9 @@
 	#portfolio h3
 	{
 		display: block;
-		padding-bottom: 1em;
-		text-transform: uppercase;
-		font-size: 1em;
-		color: rgba(0,0,0,0.6);
+		padding-bottom: 0em;
+		font-size: 0.9em;
+		color: rgba(255,255,255,1);
 	}
 
 	#portfolio .title
