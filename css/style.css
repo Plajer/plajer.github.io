@@ -11,23 +11,25 @@
 }
 .snip1404 .plan-discord {
   margin: 0;
-  width: 25%;
+  width: 15em;
   position: relative;
   float: left;
   overflow: hidden;
   border: 3px solid #442232;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   background-color: #7289da;
+  flex-wrap: wrap;
 }
 .snip1404 .plan-mc {
   margin: 0;
-  width: 25%;
+  width: 15em;
   position: relative;
   float: left;
   overflow: hidden;
   border: 3px solid #442232;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   background-color: #5b8731;
+  flex-wrap: wrap;
 }
 .snip1404 .plan {
   margin: 0;
