@@ -46,6 +46,7 @@
 	a:hover
 	{
 		text-decoration: none;
+		cursor: url(../img/awesome.png),auto;
 	}
 	
 
@@ -416,7 +417,6 @@
 	#menu li:hover a, #menu li.active a, #menu li.active span
 	{
 		color: #CCCCCC;
-		cursor: url(../img/awesome.png),auto;
 	}
 	
 	#menu-vd .current_page_item a,
