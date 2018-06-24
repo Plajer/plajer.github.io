@@ -312,6 +312,12 @@
 		padding: 2em 0em;
 		background: #2B2B2B url(../img/overlay.jpg) repeat;
 	}
+	
+	#header-wrapper-vd
+	{
+		overflow: hidden;
+		background: #ffffff url(../img/overlay_vd.jpg) repeat;
+	}
 
 	#header
 	{
@@ -320,6 +326,12 @@
 /*********************************************************************************/
 /* Logo                                                                          */
 /*********************************************************************************/
+
+	#logo-village
+	{
+		text-align: left;
+		margin-left: -10em;
+	}
 
 	#logo
 	{
@@ -361,22 +373,31 @@
 /* Menu                                                                          */
 /*********************************************************************************/
 
+	#menu-vd
+	{
+		width: 100%;
+		margin: -20px 50em;
+	}
+
 	#menu
 	{
 		width: 100%;
 		margin: -20px auto;
 	}
 	
+	#menu-vd ul,
 	#menu ul
 	{
 		text-align: center;
 	}
 	
+	#menu-vd li,
 	#menu li
 	{
 		display: inline-block;
 	}
 	
+	#menu-vd li a, #menu-vd li span,
 	#menu li a, #menu li span
 	{
 		display: inline-block;
@@ -391,11 +412,14 @@
 		color: #FFF;
 	}
 	
+	#menu-vd li:hover a, #menu-vd li.active a, #menu-vd li.active span,
 	#menu li:hover a, #menu li.active a, #menu li.active span
 	{
 		color: #CCCCCC;
+		cursor: url(../img/awesome.cur),auto;
 	}
 	
+	#menu-vd .current_page_item a,
 	#menu .current_page_item a
 	{
 		color: #FFF;
