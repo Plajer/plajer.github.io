@@ -416,7 +416,7 @@
 	#menu li:hover a, #menu li.active a, #menu li.active span
 	{
 		color: #CCCCCC;
-		cursor: url(../img/awesome.cur),auto;
+		cursor: url(img/awesome.cur),auto;
 	}
 	
 	#menu-vd .current_page_item a,
