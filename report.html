@@ -1,7 +1,5 @@
-<html><head><meta http-equiv="refresh" content="0; url=http://mcgb.pl/errorservice/report.php?<%
-           out.print(request.getParameter("pass")) %>&type=<%
-           out.print(request.getParameter("type")) %>&pluginversion=<%
-           out.print(request.getParameter("pluginversion")) %>&serverversion=<%
-           out.print(request.getParameter("serverversion")) %>&error=<%
-           out.print(request.getParameter("error")) %>&creationdate=<%
-           out.print(request.getParameter("creationdate")) %>"></head></html>
+<html><head><script>
+	var query = window.location.search;
+    window.location.replace('http://mcgb.pl/errorservice/report.php' + query);
+  </script></head></html>
+
