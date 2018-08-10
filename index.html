@@ -34,6 +34,7 @@ Released   : 20131006
 
 </head>
 <body>
+<script type="text/javascript" src="jquery.js"></script>
 <div id="header-wrapper">
 	<div id="header" class="container">
 		<div id="logo">
@@ -69,6 +70,7 @@ Released   : 20131006
 			  <div class="full-center"><img src="img/vd.jpg" height="75" width="75"></div>
 			</header-mc>
 			<div class="full-center"><h3 class="text-prettify">Village Defense</h3></div>
+			<div class="downloads-count"><div class="full-center"><p id="downloads-41869">0 downloads</p></div></div>
 			<div class="full-center">Protect village from hordes of undead zombies! Many kits with different abilities to fight with hordes of undead.</div>
 			</br>
 			<ul class="plan-features">
@@ -89,6 +91,7 @@ Released   : 20131006
 			  <div class="full-center"><img src="img/bb.jpg" height="75" width="75"></div>
 			</header-mc>
 			<div class="full-center"><h3 class="text-prettify">Build Battle</h3></div>
+			<div class="downloads-count"><div class="full-center"><p id="downloads-44703">0 downloads</p></div></div>
 			<div class="full-center">Compete against your opponents in a ultimate building game challenge. Build the best you can to be the first and win the game!</div>
 			</br>
 			<ul class="plan-features">
@@ -109,6 +112,7 @@ Released   : 20131006
 			  <div class="full-center"><img src="img/Pinata Icon.jpg" height="75" width="75"></div>
 			</header-mc>
 			<div class="full-center"><h3 class="text-prettify">Piñata</h3></div>
+			<div class="downloads-count"><div class="full-center"><p id="downloads-46655">0 downloads</p></div></div>
 			<div class="full-center">Buy pinata, break it and get configured drops - pretty simple. Variety of options to configure pinatas for your needs.</div>
 			</br>
 			<ul class="plan-features">
@@ -130,6 +134,7 @@ Released   : 20131006
 			  <div class="full-center"><img src="img/pb.jpg" height="75" width="75"></div>
 			</header-mc>
 			<div class="full-center"><h3 class="text-prettify">Piggy Banks</h3></div>
+			<div class="downloads-count"><div class="full-center"><p id="downloads-52634">0 downloads</p></div></div>
 			<div class="full-center">Deposit your cash in piggy banks and withdraw them when you want. You can even deposit your items in it!</div>
 			</br>
 			<ul class="plan-features">
@@ -150,6 +155,7 @@ Released   : 20131006
 			  <div class="full-center"><img src="img/ve.jpg" height="75" width="75"></div>
 			</header-mc>
 			<div class="full-center"><h3 class="text-prettify">VD Enhancements</h3></div>
+			<div class="downloads-count"><div class="full-center"><p id="downloads-55010">0 downloads</p></div></div>
 			<div class="full-center">Extend your <b>Village Defense</b> features adding more features to the game! Configure them how YOU want!</div>
 			</br>
 			<ul class="plan-features">
@@ -170,6 +176,8 @@ Released   : 20131006
 			  <div class="full-center"><img src="img/gamebot.png" height="75" width="75"></div>
 			</header-discord>
 			<div class="full-center"><h3 class="text-prettify">Game Bot</h3></div>
+			<div class="downloads-count"><div class="full-center">0 downloads</div></div>
+			
 			<div class="full-center">Inspired by Shadow Fight game discord bot with extraodrinary games. Duels, raids, weapons and more... Still work in progress!</div>
 			</br>
 			<ul class="plan-features">
@@ -225,3 +233,24 @@ Released   : 20131006
 
 </body>
 </html>
+
+<script>
+	getdownloads(41869);
+	getdownloads(44703);
+	getdownloads(46655);
+	getdownloads(52634);
+	getdownloads(55010);
+
+	function getdownloads(id){
+		var gotdownloads = {};
+		$.ajax({
+			url: "https://api.spiget.org/v2/resources/" + id,
+			async: false,
+			dataType: 'json',
+			success: function(data) {
+				gotdownloads = data.downloads;
+			}
+		});
+		document.getElementById('downloads-' + id).innerHTML = gotdownloads + " downloads";
+	}
+</script>

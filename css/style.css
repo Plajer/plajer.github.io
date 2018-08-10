@@ -9,6 +9,13 @@
   max-width: 1000px;
   margin: 50px 10px;
 }
+.snip1404 .downloads-count {
+  margin-top: -23px;
+  font-size: 0.92em;
+  font-weight: 200;
+  color: #cccccc;
+  text-align: center;
+}
 .snip1404 .plan-discord {
   margin: 0;
   width: 15em;
